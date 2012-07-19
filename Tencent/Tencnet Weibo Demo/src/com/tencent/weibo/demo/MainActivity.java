@@ -30,9 +30,9 @@ public class MainActivity extends Activity{
     //!!!请根据您的实际情况修改!!!      认证成功后浏览器会被重定向到这个url中   本例子中不需改动
 	private String oauthCallback = "null"; 
     //!!!请根据您的实际情况修改!!!      换为您为自己的应用申请到的APP KEY
-	private String oauthConsumeKey = "801115505"; 
+	private String oauthConsumeKey = "801194057"; 
     //!!!请根据您的实际情况修改!!!      换为您为自己的应用申请到的APP SECRET
-	private String oauthConsumerSecret="be1dd1410434a9f7d5a2586bab7a6829";
+	private String oauthConsumerSecret="ebf0b917b72968ff2851282b84ccf6f2";
 	
 	private Button btnRequest;                        //"获取Request_token"按钮
 	private Button btnAuthorize;                     //"用WebView请求用户授权"按钮
