@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_news_item_bg_seletor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/headphoto" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/v5_0_1_widget_default_head" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/online_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/first_line_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/name" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/online_status" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/pageicon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/v5_0_1_page_checked_icon" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dip">
+                    <Button android:textColor="@color/button_text" android:id="@id/button1" android:background="@drawable/v5_0_1_common_button_2_seletor" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Button android:textColor="@color/button_text" android:id="@id/button2" android:background="@drawable/v5_0_1_common_button_2_seletor" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/v5_0_1_light" android:id="@id/text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/v5_0_1_light" android:id="@id/text2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button android:textSize="12.0sp" android:textColor="@color/button_text" android:layout_gravity="center_vertical" android:id="@id/chaticon" android:background="@drawable/v5_0_1_common_button_2_seletor" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:text="@string/friend_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/item_checked" android:background="@drawable/v5_0_1_at_friend_checked_icon" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/pop_icon_layout" android:padding="14.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/pop_icon" android:background="@drawable/v5_0_1_newsfeed_arrow" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="24.0dip" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/item_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:button="@drawable/v5_0_1_checkbox" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/divider_line" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/download_finish" android:background="@color/background" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contact_download_success_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_download_done" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/light_black" android:id="@id/download_finish_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/synccontact_download_photo_success" android:layout_toRightOf="@id/contact_download_success_logo" />
+</RelativeLayout>

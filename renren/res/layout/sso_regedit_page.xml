@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/regedit_layout" android:layout_width="259.0dip" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/regedit_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sso_regedit_page" android:adjustViewBounds="true" />
+            <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/regedit_button" android:background="@drawable/sso_login_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sso_regedit_page_layout_1" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

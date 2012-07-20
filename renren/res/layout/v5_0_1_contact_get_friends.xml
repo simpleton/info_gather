@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/v5_0_1_light_gray" android:id="@id/getfriends_title" android:background="@drawable/v5_0_1_friend_search_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/v5_0_1_contact_empty_logo" android:layout="@layout/v5_0_1_contact_empty_logo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/getfriends_title" />
+        <ListView android:id="@id/getfriends_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@color/trans" android:divider="@drawable/v5_0_1_newsfeed_divider" android:layout_below="@id/getfriends_title" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</FrameLayout>

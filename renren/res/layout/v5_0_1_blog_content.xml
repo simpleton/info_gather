@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/blog_list" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.renren.mobile.android.ui.base.RenrenBaseTabsLayout android:id="@id/comment_and_share_layout" android:background="@drawable/v5_0_1_bottom_gray_background" android:layout_width="fill_parent" android:layout_height="@dimen/activity_bottom_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="14.0sp" android:textColor="#ffb0b0b0" android:gravity="left|center" android:id="@id/commentButton" android:background="@drawable/v5_0_1_edittext_bg" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:text="@string/v5_0_1_blog_content_layout_1" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/commentcount" android:background="@drawable/v5_0_1_common_button_2_seletor" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                <ImageView android:layout_gravity="top|left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@drawable/v5_0_1_blog_terminal_comment_count" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff005092" android:gravity="top|left|center" android:layout_gravity="top|left|center" android:id="@id/textcommentcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.renren.mobile.android.ui.base.RenrenBaseTabsLayout>
+    <ScrollView android:id="@id/blog_scrollview" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/comment_and_share_layout" android:fadeScrollbars="true">
+        <LinearLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_blog_top_background" android:paddingBottom="8.0dip" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/blog_head_img" android:background="@drawable/v5_0_1_widget_default_head" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/blog_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="56.0dip" android:layout_marginRight="12.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:id="@id/blog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <ImageView android:id="@id/blog_view_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/blog_publisher_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                        <View android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/blog_view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/blog_web_area" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <WebView android:id="@id/blog_web" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

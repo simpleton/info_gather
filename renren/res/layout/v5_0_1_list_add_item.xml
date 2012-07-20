@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_news_item_bg_seletor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/poilist_add_top_divider" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/c_poi_button" android:gravity="center" android:id="@id/poi_list_add_poi_item_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:includeFontPadding="false" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/v5_0_1_place_add" />
+    </LinearLayout>
+    <View android:id="@id/poilist_add_bottom_divider" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

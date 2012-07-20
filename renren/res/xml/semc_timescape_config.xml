@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<services>
+    <service id="RenRenTimescape" interface-version="1.0" name="android.resource://com.renren.mobile.android/string/app_name" broadcast-receiver=".sonyericsson.TsReceiver" refreshable="true" receive-item-selected-intent="true">
+        <spline visible-in-main-spline="true">
+            <icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            <tile prefer-contact-info="true" static="true">
+                <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/news_feed" enable-limit="true" enable-offset="true">
+                    <notification uri="content://com.renren.mobile.android.thirdparty.provider/news_feed_notification" />
+                    <map>
+                        <column dst="image">
+                            <src>image</src>
+                        </column>
+                        <column dst="source_text">
+                            <src>name</src>
+                        </column>
+                        <column dst="brief_text">
+                            <src>content</src>
+                        </column>
+                        <column dst="following_text">
+                            <src>preview_content</src>
+                        </column>
+                        <column dst="source_id">
+                            <src>_id</src>
+                        </column>
+                        <column dst="import_time">
+                            <src>import_time</src>
+                        </column>
+                        <column dst="update_time">
+                            <src>update_time</src>
+                        </column>
+                        <column dst="display_time">
+                            <src>time</src>
+                        </column>
+                        <column dst="show_extra_image">
+                            <src>show_extra_image</src>
+                        </column>
+                        <column dst="individual_extra_image">
+                            <src>individual_extra_image</src>
+                        </column>
+                        <column dst="unread">
+                            <src>unread</src>
+                        </column>
+                        <column dst="user_id">
+                            <src>user_id</src>
+                        </column>
+                        <column dst="row_type">
+                            <src>type</src>
+                            <value src="502" dst="simple_message_with_friends_image" />
+                            <value src="506" dst="simple_message_with_friends_image" />
+                            <value src="701" dst="simple_message_with_friends_image" />
+                            <value src="103" dst="simple_message_with_friends_image" />
+                            <value src="104" dst="simple_message_with_friends_image" />
+                            <value src="601" dst="message_with_friends_image" />
+                            <value src="102" dst="message_with_friends_image" />
+                        </column>
+                    </map>
+                </content-provider>
+            </tile>
+        </spline>
+        <read-unread mark-all="false" managed="true">
+            <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/events/unread_count">
+                <notification uri="content://com.renren.mobile.android.thirdparty.provider/events_notification" />
+            </content-provider>
+            <content-updater uri="content://com.renren.mobile.android.thirdparty.provider/events">
+                <map>
+                    <column dst="source_id">
+                        <src>_id</src>
+                    </column>
+                    <column dst="unread">
+                        <src>read</src>
+                        <value src="0" dst="1" />
+                        <value src="1" dst="0" />
+                    </column>
+                </map>
+            </content-updater>
+        </read-unread>
+        <link-contacts type="private" cannot-add-to-contact-text="android.resource://com.renren.mobile.android/string/cannot_resolve_contact">
+            <icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/friends_info">
+                <notification uri="content://com.renren.mobile.android.thirdparty.provider/friends_info_notification" />
+                <map>
+                    <column dst="user_id">
+                        <src>user_id</src>
+                    </column>
+                    <column dst="display_user_name">
+                        <src>user_name</src>
+                    </column>
+                    <column dst="user_image">
+                        <src>user_image</src>
+                    </column>
+                </map>
+            </content-provider>
+        </link-contacts>
+        <status-update>
+            <icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            <large-icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            <my-status>
+                <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/my_status">
+                    <notification uri="content://com.renren.mobile.android.thirdparty.provider/my_status_notification" />
+                    <map>
+                        <column dst="status">
+                            <src>status</src>
+                        </column>
+                        <column dst="import_time">
+                            <src>import_time</src>
+                        </column>
+                        <column dst="display_time">
+                            <src>display_time</src>
+                        </column>
+                    </map>
+                </content-provider>
+                <content-updater uri="content://com.renren.mobile.android.thirdparty.provider/my_status" />
+            </my-status>
+        </status-update>
+        <pivot prefer-contact-info="false">
+            <soft-key>
+                <action id="MAIN">
+                    <icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+                </action>
+                <action id="SETTING">
+                    <label text="android.resource://com.renren.mobile.android/string/setting" />
+                </action>
+            </soft-key>
+            <content-area view-type="list" default-row-type="simple_message">
+                <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/news_feed" enable-offset="true" enable-limit="true">
+                    <notification uri="content://com.renren.mobile.android.thirdparty.provider/news_feed_notification" />
+                    <map>
+                        <column dst="image">
+                            <src>image</src>
+                        </column>
+                        <column dst="source_text">
+                            <src>source_text</src>
+                        </column>
+                        <column dst="brief_text">
+                            <src>brief_text</src>
+                        </column>
+                        <column dst="following_text">
+                            <src>following_text</src>
+                        </column>
+                        <column dst="source_id">
+                            <src>_id</src>
+                        </column>
+                        <column dst="import_time">
+                            <src>import_time</src>
+                        </column>
+                        <column dst="update_time">
+                            <src>update_time</src>
+                        </column>
+                        <column dst="display_time">
+                            <src>display_time</src>
+                        </column>
+                        <column dst="show_extra_image">
+                            <src>show_extra_image</src>
+                        </column>
+                        <column dst="individual_extra_image">
+                            <src>individual_extra_image</src>
+                        </column>
+                        <column dst="unread">
+                            <src>unread</src>
+                        </column>
+                        <column dst="user_id">
+                            <src>user_id</src>
+                        </column>
+                    </map>
+                </content-provider>
+                <extra-image image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+                <default-friends-image image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+                <default-my-image image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            </content-area>
+        </pivot>
+        <setting>
+            <icon image="android.resource://com.renren.mobile.android/drawable/v5_0_1_icon" />
+            <display-text>
+                <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/setting/display_text">
+                    <notification uri="content://com.renren.mobile.android.thirdparty.provider/setting/display_text_notification" />
+                </content-provider>
+            </display-text>
+            <status>
+                <content-provider uri="content://com.renren.mobile.android.thirdparty.provider/setting/status">
+                    <notification uri="content://com.renren.mobile.android.thirdparty.provider/setting/status_notification" />
+                </content-provider>
+            </status>
+        </setting>
+    </service>
+</services>

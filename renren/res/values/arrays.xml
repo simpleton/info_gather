@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="desktop_title_popup">
+        <item>设置</item>
+        <item>注销登录</item>
+        <item>退出</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="select_chat_voice_items">
+        <item>删除语音</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="select_chat_text_items">
+        <item>复制文本</item>
+        <item>删除文本</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="shareView_multi_title_popup">
+        <item>切换视图</item>
+        <item>分享</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="shareView_single_title_popup">
+        <item>分享</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="desktop_list_head_strings">
+        <item>常用</item>
+        <item>操作</item>
+    </string-array>
+    <string-array name="desktop_list_item_favorite_strings">
+        <item>新鲜事</item>
+        <item>消息</item>
+        <item>私信</item>
+        <item>好友</item>
+        <item>公共主页</item>
+        <item>位置</item>
+        <item>找人</item>
+        <item>最近来访</item>
+        <item>应用与游戏</item>
+    </string-array>
+    <array name="desktop_list_item_friends_list_strings" />
+    <string-array name="desktop_list_item_application_strings">
+        <item>显示全部...</item>
+    </string-array>
+    <string-array name="desktop_list_item_action_strings">
+        <item>选项</item>
+        <item>注销登录</item>
+    </string-array>
+    <string-array name="nearby_tabs_title">
+        <item>地点推荐</item>
+        <item>活动优惠</item>
+    </string-array>
+    <string-array name="profile_tab_fragment_strings">
+        <item>访客</item>
+        <item>新鲜事</item>
+        <item>资料</item>
+        <item>留言板</item>
+        <item>相册</item>
+        <item>日志</item>
+        <item>状态</item>
+        <item>分享</item>
+        <item>收藏</item>
+    </string-array>
+    <string-array name="main_tab_fragment_strings">
+        <item>公共主页</item>
+        <item>新鲜事</item>
+        <item>位置</item>
+    </string-array>
+    <string-array name="newsfeed_type_strings">
+        <item>全部</item>
+        <item>状态</item>
+        <item>照片</item>
+        <item>位置</item>
+        <item>分享</item>
+        <item>日志</item>
+    </string-array>
+    <string-array name="publisher_image_events">
+        <item>编辑</item>
+        <item>替换</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="photo_get_events">
+        <item>拍照上传</item>
+        <item>本地上传</item>
+    </string-array>
+    <string-array name="guide_complete_info_schoolTypes">
+        <item>大学</item>
+        <item>高中</item>
+        <item>中专</item>
+        <item>初中</item>
+        <item>小学</item>
+    </string-array>
+    <string-array name="guide_complete_info_personTypes">
+        <item>大学生</item>
+        <item>硕士</item>
+        <item>博士</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="guide_rec_complete_info">
+        <item>已经工作了</item>
+        <item>正在上大学</item>
+        <item>正在上中学</item>
+        <item>是其他身份</item>
+    </string-array>
+    <string-array name="user_gender">
+        <item>男生</item>
+        <item>女生</item>
+    </string-array>
+    <string-array name="contact_syncinfo_title">
+        <item>为您更新了</item>
+        <item>位联系人的信息，在通知栏中可查看更新进度</item>
+    </string-array>
+</resources>

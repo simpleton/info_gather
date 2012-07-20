@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:src="@drawable/v5_0_1_chat_no_list_icon" />
+            <Button android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/chat_choose_friend_to_chat_btn" android:background="@drawable/v5_0_1_button_background" android:layout_width="240.0dip" android:layout_height="42.0dip" android:layout_marginTop="32.0dip" android:text="@string/chat_choose_friend_to_chat" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

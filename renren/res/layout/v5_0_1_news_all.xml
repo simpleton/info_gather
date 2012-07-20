@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_news_item_bg_seletor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="5.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/news_i1" android:visibility="visible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/v5_0_1_news_default_head" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/news_t1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/name" />
+                <ImageView android:id="@id/news_i4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/v5_0_1_news_birthday" />
+            </LinearLayout>
+            <TextView android:id="@id/news_t3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v5_0_1_newsfeed_time" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/news_i2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                <TextView android:id="@id/news_t4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" style="@style/v5_0_1_newsfeed_time" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:layout_width="54.0dip" android:layout_height="fill_parent">
+            <CheckBox android:layout_gravity="right|center" android:id="@id/news_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:clickable="false" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="22.0dip" android:button="@drawable/v5_0_1_check_box" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/news_all_divider" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

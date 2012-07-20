@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="flipper_head_height">38.0dip</dimen>
+    <dimen name="tabs_height">38.0dip</dimen>
+    <dimen name="activity_bottom_height">38.0dip</dimen>
+</resources>

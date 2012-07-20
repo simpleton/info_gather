@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="desktop_title_popup">
+        <item>Setting</item>
+        <item>Logout</item>
+        <item>Exit</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="select_chat_voice_items">
+        <item>Delete the voice</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="select_chat_text_items">
+        <item>Copy</item>
+        <item>Delete</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="shareView_multi_title_popup">
+        <item>Switch</item>
+        <item>Share</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="shareView_single_title_popup">
+        <item>Share</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="desktop_list_head_strings">
+        <item>FAVORITES</item>
+        <item>ACTIONS</item>
+    </string-array>
+    <string-array name="desktop_list_item_favorite_strings">
+        <item>News feed</item>
+        <item>Notifications</item>
+        <item>Chat</item>
+        <item>Friends</item>
+        <item>Public pages</item>
+        <item>Location</item>
+        <item>Search</item>
+        <item>Visitor</item>
+        <item>Apps and Games</item>
+    </string-array>
+    <array name="desktop_list_item_friends_list_strings" />
+    <string-array name="desktop_list_item_application_strings">
+        <item>More...</item>
+    </string-array>
+    <string-array name="desktop_list_item_action_strings">
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+    <string-array name="nearby_tabs_title">
+        <item>RecLocations</item>
+        <item>ActivityPre</item>
+    </string-array>
+    <string-array name="profile_tab_fragment_strings">
+        <item>Visitors</item>
+        <item>News feed</item>
+        <item>Messages</item>
+        <item>Gossip</item>
+        <item>Photo albums</item>
+        <item>Blog</item>
+        <item>Status</item>
+        <item>Shares</item>
+        <item>Favorites</item>
+    </string-array>
+    <string-array name="main_tab_fragment_strings">
+        <item>Pages</item>
+        <item>NewsFeed</item>
+        <item>Location</item>
+    </string-array>
+    <string-array name="newsfeed_type_strings">
+        <item>All</item>
+        <item>Status</item>
+        <item>Photo</item>
+        <item>Location</item>
+        <item>Share</item>
+        <item>Blog</item>
+    </string-array>
+    <string-array name="publisher_image_events">
+        <item>Edit</item>
+        <item>Replace</item>
+        <item>Delete</item>
+    </string-array>
+    <string-array name="photo_get_events">
+        <item>Take a shot</item>
+        <item>Upload from file</item>
+    </string-array>
+    <string-array name="guide_complete_info_schoolTypes">
+        <item>University</item>
+        <item>High School</item>
+        <item>Technical School</item>
+        <item>Middle School</item>
+        <item>Primary School</item>
+    </string-array>
+    <string-array name="guide_complete_info_personTypes">
+        <item>Bachelor</item>
+        <item>Master</item>
+        <item>Doctor</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="guide_rec_complete_info">
+        <item>Staff</item>
+        <item>Undergraduate</item>
+        <item>Student</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="user_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="contact_syncinfo_title">
+        <item>Have updated</item>
+        <item>Information of your contacts, progress on updating profile pictures can be checked in the notice bar.</item>
+    </string-array>
+</resources>

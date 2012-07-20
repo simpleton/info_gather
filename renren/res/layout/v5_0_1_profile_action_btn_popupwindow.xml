@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="@drawable/v5_0_1_popupwindow_list_background" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/profile_popupwindow_action_btn_status_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_status_publish" />
+            <TextView android:id="@id/profile_popupwindow_action_btn_status_line" android:background="@drawable/v5_0_1_popupwindow_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/profile_popupwindow_action_btn_photo_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_photo_publish" />
+            <TextView android:id="@id/profile_popupwindow_action_btn_photo_line" android:background="@drawable/v5_0_1_popupwindow_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/profile_popupwindow_action_btn_lbs_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_lbs_publish" />
+            <TextView android:id="@id/profile_popupwindow_action_btn_lbs_line" android:background="@drawable/v5_0_1_popupwindow_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/profile_popupwindow_action_btn_blog_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_blog_publish" />
+            <TextView android:id="@id/profile_popupwindow_action_btn_blog_line" android:background="@drawable/v5_0_1_popupwindow_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/profile_popupwindow_action_btn_message_text" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_message_publish" />
+            <TextView android:id="@id/profile_popupwindow_action_btn_message_line" android:background="@drawable/v5_0_1_popupwindow_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

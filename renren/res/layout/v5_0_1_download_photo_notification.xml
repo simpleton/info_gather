@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/background" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/upload_photo_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_download_downloading" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/light_black" android:id="@id/download_photo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/synccontact_download_photo" android:layout_toRightOf="@id/upload_photo_imageview" />
+    <ProgressBar android:id="@id/c_progress_dialog_progressbar" android:layout_width="220.0dip" android:layout_height="10.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip" android:progressDrawable="@drawable/v5_0_1_notification_progressbar_bg" android:layout_toRightOf="@id/upload_photo_imageview" android:layout_below="@id/download_photo_text" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

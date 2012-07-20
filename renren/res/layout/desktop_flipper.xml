@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renren.mobile.android.ui.base.FlipperLayout android:id="@id/desktop_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" flipper:rightOffset="@dimen/FLIPPER_RIGHT_OFFSET" flipper:leftOffset="@dimen/FLIPPER_LEFT_OFFSET" flipper:allowSingleTap="false" flipper:content="@id/flipper_content" flipper:head="@id/flipper_head" flipper:handle="@id/flipper_head_handle"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:flipper="http://schemas.android.com/apk/res/com.renren.mobile.android">
+    <include layout="@layout/flipper_head" />
+    <com.renren.mobile.android.ui.base.StackLayout android:id="@id/flipper_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.renren.mobile.android.ui.base.FlipperLayout>

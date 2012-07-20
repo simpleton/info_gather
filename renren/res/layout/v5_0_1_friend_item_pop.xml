@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pop_window_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/friend_item_chat" android:background="@drawable/v5_0_1_friend_item_pop_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/friend_item_call" android:background="@drawable/v5_0_1_friend_item_pop_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+        <ImageButton android:id="@id/friend_item_sms" android:background="@drawable/v5_0_1_friend_item_pop_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/friend_item_pop_line" android:background="@drawable/v5_0_1_friend_item_separate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/friend_item_phone_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_friend_item_pop_layout_1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/phone_number" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/v5_0_1_friend_item_pop_layout_3" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/phone_place" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

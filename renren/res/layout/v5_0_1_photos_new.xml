@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/photos_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/layout_photo_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.renren.mobile.android.ui.base.RenrenBaseTabsLayout android:background="@drawable/v5_0_1_flipper_head_black_background" android:layout_width="fill_parent" android:layout_height="@dimen/flipper_head_height">
+                <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/button_back" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_flipper_head_back" android:scaleType="centerInside" />
+                    <ImageView android:layout_gravity="center" android:background="@drawable/v5_0_1_flipper_head_separator" android:layout_width="wrap_content" android:layout_height="@dimen/flipper_head_button_line_height" />
+                    <LinearLayout android:gravity="left|center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                        <TextView android:textSize="@dimen/flipper_head_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/textview_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="176.0dip" android:singleLine="true" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/photos_head_hidden" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_gravity="center" android:id="@id/button_share" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_flipper_head_share" android:scaleType="centerInside" />
+                    <ImageView android:layout_gravity="center" android:id="@id/button_menu" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_flipper_head_menu" android:scaleType="centerInside" />
+                </LinearLayout>
+            </com.renren.mobile.android.ui.base.RenrenBaseTabsLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/layout_photos_contents" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GridView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/photos_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="3" />
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/v5_0_1_albumname_layout" android:background="@color/photos_name_background" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/textview_albumname" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar_loading_photos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:attr/progressBarStyleSmall" />
+</FrameLayout>

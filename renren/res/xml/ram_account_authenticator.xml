@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator android:label="@string/ram_item_label" android:icon="@drawable/ram_mobile_icon" android:accountType="com.renren.renren_account_manager" android:smallIcon="@drawable/ram_mobile_icon"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

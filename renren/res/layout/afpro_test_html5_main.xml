@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/afpro_test_go_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="back" />
+        <Button android:id="@id/afpro_test_load_js" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load JS" />
+        <Button android:id="@id/afpro_test_load_html" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Load HTML" />
+        <Button android:id="@id/afpro_test_go_forwart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="forward" />
+    </LinearLayout>
+    <com.renren.mobile.android.web.webkit.WebViewEx android:id="@id/afpro_test_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/web_root" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.renren.mobile.android.ui.base.RenrenBaseTabsLayout android:orientation="horizontal" android:id="@id/bottom" android:background="@drawable/v5_0_1_bottom_black_background" android:layout_width="fill_parent" android:layout_height="@dimen/activity_bottom_height" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:src="@drawable/v5_0_1_webview_back_enable_button" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:src="@drawable/v5_0_1_webview_forward_enable_button" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" android:src="@drawable/v5_0_1_webview_refresh_button" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.renren.mobile.android.ui.base.RenrenBaseTabsLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="6.0dip" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal" />
+        <WebView android:id="@id/webview" android:background="@color/background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/load_cookie_layout" android:background="@color/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_centerInParent="true">
+            <ProgressBar android:id="@id/load_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/progressBar" />
+            <TextView android:id="@id/oauth_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/v5_0_1web_main_layout_4" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/news_pressed" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/search_editText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/v5_0_1_friend_search_icon" />
+    <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/search_result_scrollview1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="200.0dip" android:minHeight="45.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/search_result_list" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/popup_confirm_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_guide_recommend_search_school_layout_1" android:layout_weight="1.0" />
+        <Button android:id="@id/popup_cancel_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_guide_recommend_search_school_layout_2" android:layout_weight="1.0" />
+    </LinearLayout>>
+</LinearLayout>

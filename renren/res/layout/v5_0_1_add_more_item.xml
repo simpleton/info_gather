@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/add_more_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/add_more_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/blue" android:id="@id/add_more_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_add_more_item_layout_1" android:layout_centerHorizontal="true" />
+        <ProgressBar android:id="@android:attr/theme" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/add_more_textview" style="?android:attr/progressBarStyleSmall" />
+    </RelativeLayout>
+    <View android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/add_more_item" />
+</RelativeLayout>
