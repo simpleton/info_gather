@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkmark_area">40.0dip</dimen>
+    <dimen name="PHOTO_SIZE">100.0dip</dimen>
+    <dimen name="HEADPHOTO_SIZE">50.0dip</dimen>
+    <dimen name="ICON_SIZE">16.0dip</dimen>
+    <dimen name="PROFILE_HEADPHOTO_SIZE">120.0dip</dimen>
+    <dimen name="v5_0_1_PROFILE_HEADPHOTO_SIZE">120.0dip</dimen>
+    <dimen name="v5_0_1_PROFILE_HEADPHOTO_BACKGROUND_SIZE">120.0dip</dimen>
+    <dimen name="PROFILE_TEXTSIZE_TITLE">20.0sp</dimen>
+    <dimen name="v5_0_1_PROFILE_TEXTSIZE_TITLE">16.0sp</dimen>
+    <dimen name="v5_0_1_PROFILE_TEXTSIZE_STATUS">12.0sp</dimen>
+    <dimen name="PROFILE_TEXTSIZE_TEXT_SMALL">13.0sp</dimen>
+    <dimen name="PROFILE_TEXTSIZE_TEXT_MEDIUM">14.0sp</dimen>
+    <dimen name="PROFILE_TEXTSIZE_TEXT_BIG">16.0sp</dimen>
+    <dimen name="PROFILE_FUNCTION_BUTTON_WIDTH">25.0dip</dimen>
+    <dimen name="PROFILE_FUNCTION_BUTTON_HEIGHT">35.0dip</dimen>
+    <dimen name="FLIPPER_RIGHT_OFFSET">274.0dip</dimen>
+    <dimen name="FLIPPER_LEFT_OFFSET">60.0dip</dimen>
+    <dimen name="flipper_head_height">48.0dip</dimen>
+    <dimen name="flipper_head_button_width">54.0dip</dimen>
+    <dimen name="flipper_head_button_line_height">24.0dip</dimen>
+    <dimen name="tabs_height">50.0dip</dimen>
+    <dimen name="flipper_head_text_size">16.0sp</dimen>
+    <dimen name="flipper_head_pop_up_menu_item_height">40.0dip</dimen>
+    <dimen name="flipper_head_pop_up_menu_item_width">160.0dip</dimen>
+    <dimen name="flipper_head_pop_up_menu_width">160.0dip</dimen>
+    <dimen name="activity_bottom_height">48.0dip</dimen>
+    <dimen name="v5_0_1_edittext_height">32.0dip</dimen>
+    <dimen name="v5_0_1_edittext_margin">40.0dip</dimen>
+    <dimen name="v5_0_1_margin_top">20.0dip</dimen>
+</resources>

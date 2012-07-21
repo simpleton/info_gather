@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom" android:background="@color/photo_preview_select_album_layout_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.renren.mobile.android.ui.base.RenrenBaseTabsLayout android:background="@drawable/v5_0_1_flipper_head_black_background" android:layout_width="fill_parent" android:layout_height="@dimen/flipper_head_height">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layout_photo_edit_title" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/button_photo_edit_back" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_flipper_head_back" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/v5_0_1_flipper_head_separator" android:layout_width="wrap_content" android:layout_height="@dimen/flipper_head_button_line_height" />
+            <LinearLayout android:gravity="left|center" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                <TextView android:textSize="@dimen/flipper_head_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/textview_photo_number" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="176.0dip" android:text="@string/photo_edit_title" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:background="@drawable/v5_0_1_flipper_head_separator" android:layout_width="wrap_content" android:layout_height="@dimen/flipper_head_button_line_height" />
+            <Button android:textSize="@dimen/flipper_head_text_size" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/edit_photo_done" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="fill_parent" android:text="@string/contact_finish" />
+        </LinearLayout>
+    </com.renren.mobile.android.ui.base.RenrenBaseTabsLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/photo_preview_select_album_layout" android:background="@drawable/v5_0_1_poi_checkin_button" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_the_upload_photo_edited_layout_1" />
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/v5_0_1_photo_edit_alumb_select_separator" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/v5_0_1_light_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/photo_preview_select_album_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/v5_0_1_the_upload_photo_edited_layout_2" android:singleLine="true" android:maxLength="6" />
+                    <ImageView android:layout_gravity="bottom" android:background="@drawable/v5_0_1_photo_edit_alumb_select_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="9.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:gravity="center_vertical" android:id="@id/photo_preview_select_quality_highbutton" android:background="@drawable/v5_0_1_photo_edit_quality_high_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/v5_0_1_the_upload_photo_edited_layout_3" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/photo_preview_select_quality_lowbutton" android:background="@drawable/v5_0_1_photo_edit_quality_normal_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:text="@string/v5_0_1_the_upload_photo_edited_layout_4" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/photo_preview_select_quality_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="  " android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.renren.mobile.android.ui.RenRenImageView android:id="@id/photo_preview" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/photo_edit_bottom_action" android:background="@drawable/v5_0_1_bottom_black_background" android:layout_width="fill_parent" android:layout_height="@dimen/flipper_head_height">
+        <ImageView android:id="@id/photo_preview_left_rotate" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_photo_edit_left_rotate" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <ImageView android:id="@id/photo_preview_rigth_rotate" android:background="@drawable/v5_0_1_icon_button_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/v5_0_1_photo_edit_right_rotate" android:scaleType="centerInside" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

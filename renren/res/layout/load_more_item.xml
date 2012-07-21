@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renren.mobile.android.view.LoadMoreViewItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/add_more_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background" >
+
+    <View
+        android:id="@id/add_more_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/v5_0_1_newsfeed_divider" />
+
+    <RelativeLayout
+        android:id="@id/add_more_item"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:layout_below="@id/add_more_divider"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10.0dip" >
+
+        <TextView
+            android:id="@id/add_more_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_more_item_layout_1"
+            android:textColor="@color/c_poi_button"
+            android:textSize="14.0sp" />
+
+        <ProgressBar
+            android:id="@id/add_more_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_toLeftOf="@id/add_more_textview"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</com.renren.mobile.android.view.LoadMoreViewItem>

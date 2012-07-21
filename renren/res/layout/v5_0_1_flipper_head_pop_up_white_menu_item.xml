@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_gravity="center_horizontal" android:id="@id/flipper_head_pop_up_menu_item" android:layout_width="@dimen/flipper_head_pop_up_menu_item_width" android:layout_height="@dimen/flipper_head_pop_up_menu_item_height" style="@style/FlipperHead.Default.PopupMenu.TextView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

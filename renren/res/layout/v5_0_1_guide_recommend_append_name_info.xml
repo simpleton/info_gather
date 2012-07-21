@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_1" />
+    <LinearLayout android:background="#ff005092" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_2" />
+        <EditText android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="24.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_3" />
+        <EditText android:id="@id/editText1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff005092" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_4" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <Button android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/button1_sure" android:background="@drawable/v5_0_1_common_button_2_seletor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_5" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/button2_cancel" android:background="@drawable/v5_0_1_common_button_2_seletor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_guide_recommend_append_name_info_layout_6" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

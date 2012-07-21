@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/item_append_school_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/v5_0_1_append_item_bg"
+    android:paddingBottom="10.0dip" >
+
+    <TextView
+        android:id="@id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12.0dip"
+        android:textColor="#ff005092"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@id/item_delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="12.0dip"
+        android:background="@drawable/v5_0_1_guide_delete_info" />
+
+</RelativeLayout>

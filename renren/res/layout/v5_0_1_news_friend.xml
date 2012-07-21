@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_news_item_bg_seletor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingLeft="5.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/fhead" android:visibility="visible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/v5_0_1_news_default_head" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/fname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/name" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/v5_0_1_light_gray" android:id="@id/ftext1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/v5_0_1_light" android:id="@id/ftext2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Button android:textSize="12.0sp" android:textColor="@color/button_text" android:layout_gravity="center_vertical" android:id="@id/fbutton1" android:background="@drawable/v5_0_1_common_button_2_seletor" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" />
+                <Button android:textSize="12.0sp" android:textColor="@color/button_text" android:layout_gravity="center_vertical" android:id="@id/fbutton2" android:background="@drawable/v5_0_1_common_button_2_seletor" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" />
+                <Button android:enabled="false" android:textSize="12.0sp" android:textColor="@color/v5_0_1_disable" android:layout_gravity="center_vertical" android:id="@id/fbutton3" android:background="@drawable/v5_0_1_common_button_2_enabled" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" />
+                <CheckBox android:layout_gravity="right|center" android:id="@id/fcheckbox" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="5.0dip" android:button="@drawable/v5_0_1_check_box" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/news_divider" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

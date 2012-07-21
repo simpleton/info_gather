@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/v5_0_1_widget2_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rapid_widget_logo" android:background="@drawable/v5_0_1_widget_renren_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/rapid_widget_left" android:layout_width="60.0dip" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@id/rapid_widget_head_photo" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/v5_0_1_widget_default_head" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rapid_widget_layout_news" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/rapid_widget_layout_news_time" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/rapid_widget_news_timetype" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_time" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/rapid_widget_cutoffrule" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rapid_widget_layout_newsandhead1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="60.0dip" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@id/rapid_widget_head_photo1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/v5_0_1_widget_default_head" />
+                    </FrameLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:singleLine="true" android:maxLength="4" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rapid_widget_layout_news1" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_name1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_type1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/rapid_widget_news_timetype1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_time1" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/rapid_widget_cutoffrule1" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rapid_widget_layout_newsandhead2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="60.0dip" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@id/rapid_widget_head_photo2" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/v5_0_1_widget_default_head" />
+                    </FrameLayout>
+                    <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:singleLine="true" android:maxLength="4" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rapid_widget_layout_news2" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_type2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/rapid_widget_news_timetype2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_time2" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/rapid_widget_cutoffrule2" android:background="@drawable/v5_0_1_newsfeed_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rapid_widget_layout_newsandhead3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="60.0dip" android:layout_height="wrap_content">
+                        <ImageView android:layout_gravity="center" android:id="@id/rapid_widget_head_photo3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/v5_0_1_widget_default_head" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/rapid_widget_layout_news3" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_name3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="5" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/rapid_widget_news_type3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_content3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="2" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_vertical" android:id="@id/rapid_widget_news_timetype3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ff808080" android:id="@id/rapid_widget_news_time3" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/v5_0_1_widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/rapid_widget_take_photos" android:background="@drawable/v5_0_1_button_widget_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/rapid_widget_publish_status" android:background="@drawable/v5_0_1_button_widget_publish_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/rapid_widget_location" android:background="@drawable/v5_0_1_button_widget_position" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.8" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/rapid_widget_refresh" android:background="@drawable/v5_0_1_button_widget_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="2.0dip" android:paddingRight="3.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/rapid_widget_news_pre" android:background="@drawable/v5_0_1_button_widget_news_pre_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/rapid_widget_news_nowpageT" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/rapid_widget_news_next" android:background="@drawable/v5_0_1_button_widget_news_next_big" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

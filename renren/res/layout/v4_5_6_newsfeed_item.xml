@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_view_head" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/v5_0_1_widget_default_head" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:id="@id/text_view_user_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/v5_0_1_newsfeed_name" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/white" android:id="@id/text_view_vip" android:background="@drawable/v5_0_1_newsfeed_vip_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" />
+                <ImageView android:id="@id/image_view_icon1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" />
+                <TextView android:id="@id/text_view_action" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" style="@style/v5_0_1_newsfeed_action" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:id="@id/v5_0_1_newsfeed_action_layout" android:paddingLeft="12.0dip" android:paddingTop="18.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/image_button_action" android:background="@drawable/v5_0_1_newsfeed_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <Button android:gravity="center" android:id="@id/visitor_button" android:background="@drawable/v5_0_1_common_button_2_seletor" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip" style="@style/v5_0_1_profile_add_friend" />
+            </LinearLayout>
+            <TextView android:textColor="@color/v5_0_1_light_gray" android:id="@id/visitor_info_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" />
+            <TextView android:id="@id/text_view_share_reason" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" style="@style/v5_0_1_newsfeed_title" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout_share_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+                <ImageView android:id="@id/image_view_share_mark_line" android:background="@drawable/v5_0_1_newsfeed_share_line" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/text_view_owner_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" style="@style/v5_0_1_newsfeed_share_name" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/text_view_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" style="@style/v5_0_1_newsfeed_share_title" />
+                        <TextView android:id="@id/news_item_privcyT" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" android:text="@string/whisper_text" />
+                        <ImageView android:id="@id/news_item_lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/layout_thumbnail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/image_view_thumbnail1" android:background="@drawable/v5_0_1_newsfeed_photo_background" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:cropToPadding="true" />
+                            <ImageView android:layout_gravity="center" android:id="@id/image_view_video_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_newsfeed_video_play" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+                            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/image_view_thumbnail2" android:background="@drawable/v5_0_1_newsfeed_photo_background" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:cropToPadding="true" />
+                                <TextView android:textColor="@color/white" android:layout_gravity="bottom|right|center" android:id="@id/v5_0_1_text_view_photo_count" android:background="@drawable/v5_0_1_newsfeed_photo_count_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" />
+                            </FrameLayout>
+                            <TextView android:ellipsize="end" android:id="@id/text_view_thumbnail_next_description" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" style="@style/v5_0_1_newsfeed_content" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+                            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+                                <TextView android:id="@id/text_view_video_play_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/content" />
+                                <TextView android:id="@id/text_view_video_play_times" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" style="@style/content" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <TextView android:id="@id/text_view_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" style="@style/v5_0_1_newsfeed_content" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                        <TextView android:id="@id/text_view_location" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v5_0_1_newsfeed_location" />
+                        <ImageView android:background="@drawable/v5_0_1_newsfeed_lbs_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+                <ImageView android:id="@id/image_view_icon2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+                <TextView android:id="@id/text_view_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/v5_0_1_newsfeed_time" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_comment_icon_and_count_CommentPage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/image_view_comment_icon_CommentPage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_newsfeed_comment_img" />
+                    <Button android:id="@id/button_comment_count_CommentPage" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" style="@style/v5_0_1_newsfeed_comment_button" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_comment" android:background="@drawable/v5_0_1_newsfeed_comment_count_background" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="12.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_comment_icon_and_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/image_view_comment_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_newsfeed_comment_img" />
+                    <Button android:id="@id/button_comment_count" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" style="@style/v5_0_1_newsfeed_comment_button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_comment_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/text_view_comment_content_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" style="@style/v5_0_1_newsfeed_comment_content" />
+                        <TextView android:id="@id/text_view_comment_time_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/v5_0_1_newsfeed_time" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/text_view_comment_content_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" style="@style/v5_0_1_newsfeed_comment_content" />
+                        <TextView android:id="@id/text_view_comment_time_2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/v5_0_1_newsfeed_time" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/PROFILE_TEXTSIZE_TEXT_MEDIUM" android:textColor="@color/gray" android:gravity="center" android:id="@id/news_item_nopermissontip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/comment_icon_line_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/comment_icon_line" android:background="@drawable/v5_0_1_comment_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/comment_icon_layout" android:background="@color/comment_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/comment_icon" android:background="@drawable/v5_0_1_newsfeed_evaluate_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" />
+            <Button android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/comment_button" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

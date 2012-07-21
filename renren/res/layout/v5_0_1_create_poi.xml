@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/create_poi_scrollview" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fadeScrollbars="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="24.0dip" android:paddingTop="30.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/create_poi_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_create_poi_layout_1" />
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/activity_from" android:id="@id/create_poi_name_edittext" android:background="@drawable/v5_0_1_edittext_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="256" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/create_poi_addr_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/create_poi_name_layout">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_create_poi_layout_2" />
+            <EditText android:textSize="14.0sp" android:textColorHint="@color/activity_from" android:id="@id/create_poi_addr_edittext" android:background="@drawable/v5_0_1_edittext_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="256" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/create_poi_type_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/create_poi_addr_layout">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v5_0_1_create_poi_layout_3" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/create_poi_type_edittext" android:background="@drawable/v5_0_1_guide_recommend_button_background" android:padding="8.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

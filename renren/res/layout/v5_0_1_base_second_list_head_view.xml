@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/desktop_list_background" android:layout_width="fill_parent" android:layout_height="@dimen/flipper_head_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/flipper_head_button_width" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_flipper_head_back" />
+    <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

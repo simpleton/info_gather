@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renren.mobile.android.chat.AudioChatChangeByPadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/chat_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <com.renren.mobile.android.chat.ChatListView
+        android:id="@id/chat_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@null"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@id/chat_bottom_bar_enable"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/v5_0_1_chat_operation_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@id/emotion_button"
+            android:layout_width="46.0dip"
+            android:layout_height="48.0dip"
+            android:background="@drawable/v5_0_1_publisher_button_bg"
+            android:src="@drawable/v5_0_1_publisher_emotion_button" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@id/message_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="36.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/v5_0_1_edittext_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/c_chat_activity_layout_1"
+                android:imeOptions="actionDone"
+                android:paddingLeft="8.0dip" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@id/send_button"
+            android:layout_width="46.0dip"
+            android:layout_height="48.0dip"
+            android:background="@drawable/v5_0_1_publisher_button_bg"
+            android:gravity="center"
+            android:src="@drawable/v5_0_1_chat_send_btn"
+            android:text="@string/c_chat_activity_layout_2"
+            android:textColor="#ff213243"
+            android:textSize="15.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/chat_talk_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/v5_0_1_chat_operation_bar_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="6.0dip" >
+
+        <ImageView
+            android:id="@id/chat_talk_play_button"
+            android:layout_width="fill_parent"
+            android:layout_height="34.0dip"
+            android:layout_marginTop="3.0dip"
+            android:background="@drawable/v5_0_1_chat_speak_start_btn_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <GridView
+            android:id="@id/emotion_view"
+            style="@style/myGridViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:columnWidth="35.0dip"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollingCache="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.renren.mobile.android.chat.AudioChatChangeByPadLayout>

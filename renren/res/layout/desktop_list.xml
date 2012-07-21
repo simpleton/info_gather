@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renren.mobile.android.desktop.ListSwitcher android:id="@id/list_switcher" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.renren.mobile.android.ui.base.ProfileHeadView android:id="@id/desktop_list_profile_head" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.renren.mobile.android.desktop.DesktopList android:id="@id/desktop_list_container" android:background="@color/desktop_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_width="@dimen/FLIPPER_RIGHT_OFFSET" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_desktop_list_shadow" android:scaleType="fitXY" />
+        </FrameLayout>
+    </LinearLayout>
+</com.renren.mobile.android.desktop.ListSwitcher>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/import_photo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/v5_0_1_widget_default_head" android:scaleType="centerCrop" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/v5_0_1_light_gray" android:id="@id/import_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/import_photo" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/v5_0_1_description" android:id="@id/import_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/import_photo" android:layout_below="@id/import_name" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/v5_0_1_description" android:id="@id/import_tel_attribution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/import_tel" android:layout_below="@id/import_name" />
+    <CheckBox android:id="@id/import_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:button="@drawable/v5_0_1_check_box" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

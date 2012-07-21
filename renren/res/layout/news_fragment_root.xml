@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.renren.mobile.android.news.NewsFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <com.renren.mobile.android.ui.base.RenrenBaseListView
+        android:id="@id/news_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:background="@color/background"
+        android:divider="@drawable/v5_0_1_newsfeed_divider"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:footerDividersEnabled="false" />
+
+    <include
+        android:id="@id/news_header"
+        layout="@layout/new_pull_update_header" />
+
+</com.renren.mobile.android.news.NewsFrame>
