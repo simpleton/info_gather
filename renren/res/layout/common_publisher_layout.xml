@@ -1,25 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:textSize="16.0sp" android:textColorHint="@color/activity_from" android:gravity="top" android:id="@id/input_editor" android:background="@null" android:padding="4.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="3" android:capitalize="sentences" android:autoText="true" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" android:isScrollContainer="true" />
-    <LinearLayout android:id="@id/image_layout" android:background="@drawable/v5_0_1_publisher_image_bg" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="4.0dip">
-        <ImageView android:id="@id/img_preview" android:background="@color/background" android:layout_width="42.0dip" android:layout_height="42.0dip" android:scaleType="centerCrop" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@id/input_editor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:autoText="true"
+        android:background="@null"
+        android:capitalize="sentences"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+        android:isScrollContainer="true"
+        android:minLines="3"
+        android:padding="4.0dip"
+        android:textColorHint="@color/activity_from"
+        android:textSize="16.0sp" />
+
+    <LinearLayout
+        android:id="@id/image_layout"
+        android:layout_width="46.0dip"
+        android:layout_height="46.0dip"
+        android:layout_marginBottom="4.0dip"
+        android:layout_marginLeft="6.0dip"
+        android:background="@drawable/v5_0_1_publisher_image_bg"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@id/img_preview"
+            android:layout_width="42.0dip"
+            android:layout_height="42.0dip"
+            android:background="@color/background"
+            android:scaleType="centerCrop" />
     </LinearLayout>
-    <View android:id="@id/poi_split_line" android:background="@drawable/v5_0_1_publisher_split_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" />
-    <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
-        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/poi_area_layout" android:background="@drawable/v5_0_1_publisher_poi_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="6.0dip" android:layout_weight="3.0">
-            <ImageView android:layout_gravity="center_vertical" android:id="@id/poi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/v5_0_1_publisher_poi_icon" />
-            <TextView android:textSize="14.0sp" android:textColor="@color/button_text" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/position_text" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
-            <ImageView android:id="@id/poi_content_divider" android:background="@drawable/v5_0_1_publisher_poi_area_sperator" android:layout_width="1.0dip" android:layout_height="fill_parent" />
-            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <ImageView android:id="@id/arrow_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/v5_0_1_publisher_poi_list_icon" />
-                <ProgressBar android:layout_gravity="center" android:id="@id/location_progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/publisher_progress_bar" />
+
+    <View
+        android:id="@id/poi_split_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="3.0dip"
+        android:background="@drawable/v5_0_1_publisher_split_line"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip" >
+
+        <LinearLayout
+            android:id="@id/poi_area_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="28.0dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6.0dip"
+            android:layout_weight="3.0"
+            android:background="@drawable/v5_0_1_publisher_poi_text_bg"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@id/poi_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3.0dip"
+                android:src="@drawable/v5_0_1_publisher_poi_icon" />
+
+            <TextView
+                android:id="@id/position_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/button_text"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@id/poi_content_divider"
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/v5_0_1_publisher_poi_area_sperator" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@id/arrow_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/v5_0_1_publisher_poi_list_icon"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@id/location_progressbar"
+                    style="@style/publisher_progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
             </FrameLayout>
         </LinearLayout>
-        <TextView android:textSize="12.0sp" android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/text_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:minWidth="90.0dip" android:text="0/240" android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@id/text_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8.0dip"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:minWidth="90.0dip"
+            android:text="0/240"
+            android:textSize="12.0sp" />
     </LinearLayout>
-    <include android:id="@id/input_editor_bottom" layout="@layout/comment_publisher_operation_bar" />
-    <LinearLayout android:gravity="bottom" android:id="@id/emontion_layout" android:background="@drawable/v5_0_1_publisher_emotion_area_bg" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <GridView android:gravity="center" android:id="@id/gridview" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:columnWidth="35.0dip" android:numColumns="auto_fit" style="@style/myGridViewStyle" />
+
+    <include
+        android:id="@id/input_editor_bottom"
+        layout="@layout/comment_publisher_operation_bar" />
+
+    <LinearLayout
+        android:id="@id/emontion_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_emotion_area_bg"
+        android:gravity="bottom"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@id/gridview"
+            style="@style/myGridViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="35.0dip"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollingCache="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip" />
     </LinearLayout>
+
 </LinearLayout>

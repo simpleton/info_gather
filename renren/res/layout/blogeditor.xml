@@ -1,11 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/blogeditor_layout" android:background="@color/background" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/blog_title_editor" android:background="@drawable/v5_0_1_blog_editor_content_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_margin="8.0dip" android:hint="@string/blogeditor_layout_1" android:singleLine="true" android:maxLength="100" android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" android:imeOptions="actionNext" style="@style/v5_0_1_newsfeed_title" />
-    <EditText android:scrollbarAlwaysDrawVerticalTrack="true" android:gravity="top" android:id="@id/blog_content_editor" android:background="@drawable/v5_0_1_blog_editor_content_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:minHeight="32.0dip" android:hint="@string/blogeditor_layout_2" android:minLines="1" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" android:isScrollContainer="true" android:imeOptions="actionDone" style="@style/v5_0_1_newsfeed_title" />
-    <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:gravity="right|center" android:id="@id/editor_counter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="0/20000" />
-    <include android:id="@id/input_editor_bottom" layout="@layout/comment_publisher_operation_bar" />
-    <LinearLayout android:gravity="bottom" android:id="@id/emontion_layout" android:background="@drawable/v5_0_1_publisher_emotion_area_bg" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
-        <GridView android:gravity="center" android:id="@id/gridview" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:columnWidth="35.0dip" android:numColumns="auto_fit" style="@style/myGridViewStyle" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/blogeditor_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:addStatesFromChildren="true"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@id/blog_title_editor"
+        style="@style/v5_0_1_newsfeed_title"
+        android:layout_width="fill_parent"
+        android:layout_height="34.0dip"
+        android:layout_margin="8.0dip"
+        android:background="@drawable/v5_0_1_blog_editor_content_bg"
+        android:hint="@string/blogeditor_layout_1"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+        android:maxLength="100"
+        android:padding="6.0dip"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@id/blog_content_editor"
+        style="@style/v5_0_1_newsfeed_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dip"
+        android:layout_marginRight="8.0dip"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_blog_editor_content_bg"
+        android:gravity="top"
+        android:hint="@string/blogeditor_layout_2"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage"
+        android:isScrollContainer="true"
+        android:minHeight="32.0dip"
+        android:minLines="1"
+        android:padding="6.0dip"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+    <TextView
+        android:id="@id/editor_counter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8.0dip"
+        android:gravity="right|center"
+        android:text="0/20000"
+        android:textColor="@color/gray"
+        android:textSize="12.0sp" />
+
+    <include
+        android:id="@id/input_editor_bottom"
+        layout="@layout/comment_publisher_operation_bar" />
+
+    <LinearLayout
+        android:id="@id/emontion_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_emotion_area_bg"
+        android:gravity="bottom"
+        android:padding="2.0dip"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@id/gridview"
+            style="@style/myGridViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="35.0dip"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:horizontalSpacing="5.0dip"
+            android:numColumns="auto_fit"
+            android:scrollingCache="false"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5.0dip" />
     </LinearLayout>
+
 </LinearLayout>

@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.renren.mobile.android.ui.base.RenrenBaseListView android:id="@id/listview" android:background="@color/background" android:focusable="false" android:focusableInTouchMode="true" android:addStatesFromChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/v5_0_1_newsfeed_divider" android:footerDividersEnabled="false" />
-    <include android:id="@id/header" layout="@layout/new_pull_update_header" />
-    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/back_top" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:visibility="invisible" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/v5_0_1_newsfeed_back_top" android:contentDescription="back_top" />
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <com.renren.mobile.android.ui.base.RenrenBaseListView
+        android:id="@id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="true"
+        android:background="@color/background"
+        android:divider="@drawable/v5_0_1_newsfeed_divider"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:footerDividersEnabled="false" />
+
+    <include
+        android:id="@id/header"
+        layout="@layout/new_pull_update_header" />
+
+    <ImageView
+        android:id="@id/back_top"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_gravity="bottom|right|center"
+        android:contentDescription="back_top"
+        android:paddingBottom="12.0dip"
+        android:paddingRight="12.0dip"
+        android:src="@drawable/v5_0_1_newsfeed_back_top"
+        android:visibility="invisible" />
+
 </FrameLayout>
