@@ -1,0 +1,2 @@
+use dex2jar create classes.jar for classes.dex
+then u can see decompile code in eclipse
